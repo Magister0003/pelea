@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://arena.gd" id="1"]
+[ext_resource type="PackedScene" path="res://fighters/kai.glb" id="2"]
+[ext_resource type="PackedScene" path="res://fighters/akari.glb" id="3"]
+
+[node name="Arena" type="Node3D"]
+script = ExtResource("1")
+player_one_model = ExtResource("2")
+player_two_model = ExtResource("3")
+player_one_punch_contact = 0.36
+player_one_kick_contact = 0.45
+player_two_punch_contact = 0.431
+player_two_kick_contact = 0.45
